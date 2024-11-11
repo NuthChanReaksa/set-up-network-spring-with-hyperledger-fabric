@@ -11,8 +11,8 @@ CA_URL="https://github.com/hyperledger/fabric-ca/releases/download/v$FABRIC_CA_V
 
 # Create the bin directory in the current project directory
 
-# echo "Creating bin directory in the current project directory..."
-# mkdir -p "${BINARY_DIR}"
+ echo "Creating bin directory in the current project directory..."
+ mkdir -p "${BINARY_DIR}"
 
 # Download and extract Hyperledger Fabric binaries to the bin directory
 echo "Downloading Hyperledger Fabric binaries..."
