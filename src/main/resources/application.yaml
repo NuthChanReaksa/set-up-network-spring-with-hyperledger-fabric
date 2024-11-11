@@ -1,0 +1,13 @@
+server:
+    port: 8181
+spring:
+    application:
+        name: api-hyperledger-fabric-spring
+# configuration about network that we are working with
+fabric:
+    network:
+        channel: mychannel
+        discovery: true
+        # this is the connection profie
+        config-path:
+    ca:
