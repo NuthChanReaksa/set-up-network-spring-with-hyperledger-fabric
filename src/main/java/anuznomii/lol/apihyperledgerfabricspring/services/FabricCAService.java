@@ -68,7 +68,7 @@ public class FabricCAService {
             log.info("Identity doesn't exist in the wallet ! ");
         }
         // create admin first, in order to register and enroll the user
-        // createAdminUserOrg1();
+         createAdminUserOrg1();
 
         // Create a new user
         CAEnrollmentRequest request = CAEnrollmentRequest.builder()
@@ -78,7 +78,7 @@ public class FabricCAService {
                 .secret("user1pw")
                 .registrarUsername("admin")
                 .build();
-        // registerAndEnrollUser(request);
+         registerAndEnrollUser(request);
 
     }
 
@@ -87,8 +87,7 @@ public class FabricCAService {
         // HFCA client
         var props = new Properties();
         FabricUtils.setTlsProps(
-                props,
-                org1CertificatePath,
+                props, org1CertificatePath,
                 tlsEnabled);
 
         var caClient = HFCAClient.createNewInstance(
